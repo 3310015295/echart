@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>function</title>
+	<meta charset="UTF-8">
+    <meta name="keywords" content="keyword1,keyword2,keyword3"></meta>
+    <meta name="description" content="this is my page"></meta>
+    <meta name="content-type" content="text/html; charset=UTF-8"></meta>
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<script type="text/javascript" src="/echart/js/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+		// 1.|| 和 && 的妙用 ：|| 1.左侧表达式为真，返回左侧的值，否则返回右侧
+		// 					&& 左侧表达式为真返回右侧的值
+		console.log(("左侧为真"||""));
+		console.log("======&&============");
+		console.log(("左侧为真："&&"右侧的值"));
+		
+		//2.()将一个表达式整体包裹起来，作为一个整体进行运算，然后返回这个整体的值
+		(function(x,y){
+			console.log("传入的x参数是："+x);
+		})("666");
+		//3.return 后面有多个表达式，并且表达式之间有“，”分割,返回最后一个表达式的值
+		function testReturn(){
+			return "1","return后面有多个表达式，返回最后一个";
+		};
+		 console.log(testReturn());
+	</script>
+  </head>
+  
+  <body>
+    JQuery测试 <br>
+  </body>
+  <script type="text/javascript">
+  //undefined 和nul 的区别：null表示一个空值，undefined表示未定值
+  var a = null;
+  var b;
+  console.log("a的值为："+a);
+  console.log("b的值为："+b);
+  console.log(a==b?"a与b值相等":"a与b值不相等");
+  console.log(a===b?"a与b值相等且类型相等":"a与b不完全相等");
+  console.log("null的类型时："+(typeof a));
+  console.log("undefined的类型时："+(typeof b));
+  
+  //强制类型转化
+  var sz = 1;
+  var str = "abc";
+  var str2 = "a";
+  var flag = true;
+  console.log("数值+字符串："+(sz+str));
+  console.log("数值+布尔:"+(sz+flag));//2
+  console.log("布尔+字符:"+(flag+str));//
+  console.log("=======比较字符串的大小======");
+  console.log(str > str2);
+  </script>
+</html>

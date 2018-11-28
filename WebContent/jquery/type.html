@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>function</title>
+	<meta charset="UTF-8">
+    <meta name="keywords" content="keyword1,keyword2,keyword3"></meta>
+    <meta name="description" content="this is my page"></meta>
+    <meta name="content-type" content="text/html; charset=UTF-8"></meta>
+ 
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<script type="text/javascript" src="/echart/js/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+	   //基本数据类型:字符串、数值、布尔
+	   //引用类型数据：对象、数组
+	var myObject = new Object();
+	myObject.name = "James";
+	myObject.age = "22";
+	myObject.phone = "555 1234";
+	for(prop in myObject){
+		console.log(prop +" is "+myObject[prop]);
+	}
+	//特殊函数eval 可以对字符串表示的任意有效的javascript代码求值
+	var  anExpression = "7*9/2";
+	console.log(eval(anExpression));
+	</script>
+  </head>
+  
+  <body>
+    type <br>
+  </body>
+</html>
